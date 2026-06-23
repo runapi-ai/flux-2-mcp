@@ -1,0 +1,44 @@
+{
+  "endpoints": {
+    "flux-2-flex-remix-image/remix_image": {
+      "unit_price_cents": 14,
+      "billing_config": {
+        "key": "output_resolution",
+        "overrides": {
+          "1k": 14,
+          "2k": 24
+        }
+      }
+    },
+    "flux-2-pro-remix-image/remix_image": {
+      "unit_price_cents": 5,
+      "billing_config": {
+        "key": "output_resolution",
+        "overrides": {
+          "1k": 5,
+          "2k": 7
+        }
+      }
+    },
+    "flux-2-flex-text-to-image/text_to_image": {
+      "unit_price_cents": 14,
+      "billing_config": {
+        "key": "output_resolution",
+        "overrides": {
+          "1k": 14,
+          "2k": 24
+        }
+      }
+    },
+    "flux-2-pro-text-to-image/text_to_image": {
+      "unit_price_cents": 5,
+      "billing_config": {
+        "key": "output_resolution",
+        "overrides": {
+          "1k": 5,
+          "2k": 7
+        }
+      }
+    }
+  }
+}

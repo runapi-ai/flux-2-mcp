@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.1.7](https://github.com/runapi-ai/flux-2-mcp/releases/tag/v0.1.7) - 2026-07-20
+
+### Fixed
+- Require Flux 2 remix requests to contain between one and eight source images.
+
+
 ## [v0.1.6](https://github.com/runapi-ai/flux-2-mcp/releases/tag/v0.1.6) - 2026-07-08
 
 ### Fixed

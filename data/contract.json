@@ -9,16 +9,28 @@
     "flux-2/remix-image": {
       "model": "Flux 2",
       "endpoint": "remix_image",
+      "task_type": "asynchronous",
       "models": [
         "flux-2-flex-remix-image",
         "flux-2-pro-remix-image"
       ],
       "fields_by_model": {
         "flux-2-flex-remix-image": {
+          "model": {
+            "type": "string"
+          },
           "prompt": {
+            "type": "string",
             "required": true
           },
+          "source_image_urls": {
+            "type": "array",
+            "required": true,
+            "max_items": 8,
+            "min_items": 1
+          },
           "aspect_ratio": {
+            "type": "string",
             "enum": [
               "1:1",
               "4:3",
@@ -31,20 +43,35 @@
             ]
           },
           "output_resolution": {
+            "type": "string",
             "enum": [
               "1k",
               "2k"
             ]
           },
-          "source_image_urls": {
-            "required": true
+          "enable_safety_checker": {
+            "type": "boolean"
+          },
+          "callback_url": {
+            "type": "string"
           }
         },
         "flux-2-pro-remix-image": {
+          "model": {
+            "type": "string"
+          },
           "prompt": {
+            "type": "string",
             "required": true
           },
+          "source_image_urls": {
+            "type": "array",
+            "required": true,
+            "max_items": 8,
+            "min_items": 1
+          },
           "aspect_ratio": {
+            "type": "string",
             "enum": [
               "1:1",
               "4:3",
@@ -57,13 +84,17 @@
             ]
           },
           "output_resolution": {
+            "type": "string",
             "enum": [
               "1k",
               "2k"
             ]
           },
-          "source_image_urls": {
-            "required": true
+          "enable_safety_checker": {
+            "type": "boolean"
+          },
+          "callback_url": {
+            "type": "string"
           }
         }
       }
@@ -71,16 +102,22 @@
     "flux-2/text-to-image": {
       "model": "Flux 2",
       "endpoint": "text_to_image",
+      "task_type": "asynchronous",
       "models": [
         "flux-2-flex-text-to-image",
         "flux-2-pro-text-to-image"
       ],
       "fields_by_model": {
         "flux-2-flex-text-to-image": {
+          "model": {
+            "type": "string"
+          },
           "prompt": {
+            "type": "string",
             "required": true
           },
           "aspect_ratio": {
+            "type": "string",
             "enum": [
               "1:1",
               "4:3",
@@ -92,17 +129,29 @@
             ]
           },
           "output_resolution": {
+            "type": "string",
             "enum": [
               "1k",
               "2k"
             ]
+          },
+          "enable_safety_checker": {
+            "type": "boolean"
+          },
+          "callback_url": {
+            "type": "string"
           }
         },
         "flux-2-pro-text-to-image": {
+          "model": {
+            "type": "string"
+          },
           "prompt": {
+            "type": "string",
             "required": true
           },
           "aspect_ratio": {
+            "type": "string",
             "enum": [
               "1:1",
               "4:3",
@@ -114,10 +163,17 @@
             ]
           },
           "output_resolution": {
+            "type": "string",
             "enum": [
               "1k",
               "2k"
             ]
+          },
+          "enable_safety_checker": {
+            "type": "boolean"
+          },
+          "callback_url": {
+            "type": "string"
           }
         }
       }

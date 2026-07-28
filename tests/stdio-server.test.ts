@@ -61,7 +61,7 @@ describe("flux-2 stdio MCP server", () => {
 
     // Every advertised model must price without naming an endpoint, even one
     // that only lives on a non-primary endpoint of a multi-endpoint line.
-    for (const model of ["flux-2-flex-remix-image","flux-2-pro-remix-image","flux-2-flex-text-to-image","flux-2-pro-text-to-image"]) {
+    for (const model of ["flux-2-flex-remix-image","flux-2-max-remix-image","flux-2-pro-remix-image","flux-2-flex-text-to-image","flux-2-max-text-to-image","flux-2-pro-text-to-image"]) {
       const priced = await client.callTool({ name: "check_pricing", arguments: { model } });
       const pricedContent = priced.content?.[0];
       if (!pricedContent || pricedContent.type !== "text") {

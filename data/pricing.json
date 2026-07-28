@@ -10,6 +10,9 @@
         }
       }
     },
+    "flux-2-max-remix-image/remix_image": {
+      "unit_price_cents": 10
+    },
     "flux-2-pro-remix-image/remix_image": {
       "unit_price_cents": 5,
       "billing_config": {
@@ -29,6 +32,9 @@
           "2k": 24
         }
       }
+    },
+    "flux-2-max-text-to-image/text_to_image": {
+      "unit_price_cents": 10
     },
     "flux-2-pro-text-to-image/text_to_image": {
       "unit_price_cents": 5,

@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.2.0](https://github.com/runapi-ai/flux-2-mcp/releases/tag/v0.2.0) - 2026-07-28
+
+### Added
+- Support Flux 2 Max text-to-image and remix-image tools with contract-enforced request constraints.
+
+
 ## [v0.1.7](https://github.com/runapi-ai/flux-2-mcp/releases/tag/v0.1.7) - 2026-07-20
 
 ### Fixed

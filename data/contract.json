@@ -17,32 +17,6 @@
         "flux-2-max-remix-image",
         "flux-2-pro-remix-image"
       ],
-      "rules": [
-        {
-          "when": {
-            "model": "flux-2-flex-remix-image"
-          },
-          "forbidden": [
-            "output_count"
-          ]
-        },
-        {
-          "when": {
-            "model": "flux-2-max-remix-image"
-          },
-          "forbidden": [
-            "enable_safety_checker"
-          ]
-        },
-        {
-          "when": {
-            "model": "flux-2-pro-remix-image"
-          },
-          "forbidden": [
-            "output_count"
-          ]
-        }
-      ],
       "fields_by_model": {
         "flux-2-flex-remix-image": {
           "model": {
@@ -85,6 +59,7 @@
               "1k",
               "2k"
             ],
+            "default": "1k",
             "description": "Output resolution."
           },
           "enable_safety_checker": {
@@ -193,6 +168,7 @@
               "1k",
               "2k"
             ],
+            "default": "1k",
             "description": "Output resolution."
           },
           "enable_safety_checker": {
@@ -214,32 +190,6 @@
         "flux-2-flex-text-to-image",
         "flux-2-max-text-to-image",
         "flux-2-pro-text-to-image"
-      ],
-      "rules": [
-        {
-          "when": {
-            "model": "flux-2-flex-text-to-image"
-          },
-          "forbidden": [
-            "output_count"
-          ]
-        },
-        {
-          "when": {
-            "model": "flux-2-max-text-to-image"
-          },
-          "forbidden": [
-            "enable_safety_checker"
-          ]
-        },
-        {
-          "when": {
-            "model": "flux-2-pro-text-to-image"
-          },
-          "forbidden": [
-            "output_count"
-          ]
-        }
       ],
       "fields_by_model": {
         "flux-2-flex-text-to-image": {
@@ -275,6 +225,7 @@
               "1k",
               "2k"
             ],
+            "default": "1k",
             "description": "Output resolution."
           },
           "enable_safety_checker": {
@@ -368,6 +319,7 @@
               "1k",
               "2k"
             ],
+            "default": "1k",
             "description": "Output resolution."
           },
           "enable_safety_checker": {

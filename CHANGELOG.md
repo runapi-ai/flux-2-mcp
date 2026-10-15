@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.3.1](https://github.com/runapi-ai/flux-2-mcp/releases/tag/v0.3.1) - 2026-10-15
+
+### Changed
+- Declare the 1:1 server default for aspect_ratio on flux-2-flex and flux-2-pro text_to_image and remix_image.
+
+
 ## [v0.3.0](https://github.com/runapi-ai/flux-2-mcp/releases/tag/v0.3.0) - 2026-09-30
 
 ### Changed

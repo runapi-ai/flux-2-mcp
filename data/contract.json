@@ -51,6 +51,7 @@
               "2:3",
               "auto"
             ],
+            "default": "1:1",
             "description": "Output aspect ratio."
           },
           "output_resolution": {
@@ -160,6 +161,7 @@
               "2:3",
               "auto"
             ],
+            "default": "1:1",
             "description": "Output aspect ratio."
           },
           "output_resolution": {
@@ -217,6 +219,7 @@
               "3:2",
               "2:3"
             ],
+            "default": "1:1",
             "description": "Output aspect ratio."
           },
           "output_resolution": {
@@ -311,6 +314,7 @@
               "3:2",
               "2:3"
             ],
+            "default": "1:1",
             "description": "Output aspect ratio."
           },
           "output_resolution": {
